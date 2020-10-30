@@ -21,5 +21,13 @@ public class Player {
         hand[index] = null; //remove a carta da mão
         return temp; //retorna a carta escolhida
     }
+    @Override
+    public String toString(){ // imprimir cartas do jogador com índice (0) Dois de Copas (1) Quatro de Espadas (2) Ás de Ouros
+        String player = "";
+        for (int i = 0; i < hand.length; i++) {
+            player += "(" + i + ")" + hand[i] + " ";
+        }
+        return player;
+    }
 
 }

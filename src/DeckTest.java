@@ -2,14 +2,9 @@ import java.sql.SQLOutput;
 
 public class DeckTest {
     public static void main(String[] args) {
-        //FullDeck deck = new FullDeck();
-        TrucoDeck deck = new TrucoDeck();
-        deck.shuffle();
-
-        for (int i = 0; i < 52; i++) {
-            System.out.println(deck.dealCard());
-        }
-
-        }
+        Truco truco = new Truco();
+        truco.startGame();
+        truco.printTable();
     }
+}
 
